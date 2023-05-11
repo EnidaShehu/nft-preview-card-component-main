@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-img-top {
+  border-radius: 0.5rem;
+}
+
+.img {
+  position: relative;
+}
+
+.img #img-1 {
+  z-index: 3;
+}
+
+.img #img-2 {
+  position: absolute;
+  top: 7rem;
+  left: 7rem;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.img:hover #img-2 {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 1rem;
+  left: 0rem;
+  z-index: 2;
+  height: 94%;
+  width: 100%;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 0.5rem;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+}
+
+.card-title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+.card-text {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+
+.card-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.left {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.right {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+}
+
+.font {
+  font-size: 0.9rem;
+}
+
+.border {
+  border-radius: 100%;
+  color: hsl(0, 0%, 100%);
+}
+
+.end {
+  color: hsl(0, 0%, 100%);
+}
+
+.end:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .attribution {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .card {
+    margin-top: 0.5rem;
+  }
+}
