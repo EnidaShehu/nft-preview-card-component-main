@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/EnidaShehu/nft-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:(https://enidashehu.github.io/nft-preview-card-component-main/)
 
 ### Built with
 
